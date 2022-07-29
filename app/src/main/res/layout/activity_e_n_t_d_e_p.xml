@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ENTDEP"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/entheading"
+        android:layout_width="365dp"
+        android:layout_height="43dp"
+        android:paddingLeft="29sp"
+        android:paddingTop="5sp"
+        android:paddingRight="0sp"
+        android:paddingBottom="0sp"
+        android:text="Welcome to ENT department"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="167dp"
+        android:layout_height="129dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entheading"
+        app:layout_constraintVertical_bias="0.089"
+        app:srcCompat="@drawable/entdoc1" />
+
+    <TextView
+        android:id="@+id/doc1ent"
+        android:layout_width="196dp"
+        android:layout_height="38dp"
+        android:paddingLeft="35sp"
+        android:paddingTop="5sp"
+        android:paddingRight="0sp"
+        android:paddingBottom="0sp"
+        android:text="Dr. A.S.Pandey"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/entheading"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/entdr"
+        android:layout_width="203dp"
+        android:layout_height="77dp"
+        android:text="text"
+
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/doc1ent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <TextView
+        android:id="@+id/appent1"
+        android:layout_width="89dp"
+        android:layout_height="30dp"
+        android:paddingLeft="5sp"
+        android:text="Appointment"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:background="@color/white"
+        android:layout_width="350sp"
+        android:layout_height="350sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.408"></DatePicker>
+
+    <Button
+        android:id="@+id/fixent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fix Appointment"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datePicker" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
